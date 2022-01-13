@@ -45,3 +45,12 @@ jobs:
         npm test
       env:
         CI: true
+  
+    steps: 
+    - name: anything
+    - uses: actions/checkout@v2
+    - env: 
+      - approvals: 1
+      - github_token: js
+      - add_label: heyllo
+    
